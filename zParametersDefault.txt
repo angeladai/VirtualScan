@@ -1,0 +1,41 @@
+
+s_scanWholeShape = false;
+s_outDirectory = "./output";
+
+s_meshFileList = "example_chair.txt";
+s_cameraDir = "./cameras";
+
+s_meshDirectory = "//braxis/Datasets/ShapeNetCore.v2";
+s_transformToUnitBox = true; // for shapenet transform to [-0.5, 0.5]
+s_numTrajectories = 6; //per model
+
+s_scanFromTrajectoryFiles = false;
+s_trajectoryDir = "";
+
+s_imageWidth = 320;	
+s_imageHeight = 240;
+s_cameraFov = 60.0f; // degrees
+
+//noise model for depth -- TODO implement
+s_addNoiseToDepth = false;
+s_depthNoiseSigma = 0.01f;
+
+s_filterDepthMap = true; 	//bilateral filter depth map
+s_depthSigmaD = 5.0f;		//bilateral filter sigma domain
+s_depthSigmaR = 0.1f;		//bilateral filter sigma range
+
+//fusion parameters
+s_depthMin = 0.2f;		//in m
+s_depthMax = 8.0f;		//in m
+s_gridDim = 32;			//voxel dimensions
+s_padding = 3;			//voxel padding
+
+s_maxTrajectoryLength = 100;	//max number of frames fused in one scan
+s_maxModels = 0;
+
+s_generatePointClouds = false;
+s_maxPointsPerFrame = 1024;
+
+s_debugOutput = true;
+s_scanWholeShape = true;
+s_numTrajectories = 1;
