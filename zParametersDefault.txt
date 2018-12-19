@@ -37,5 +37,3 @@ s_generatePointClouds = false;
 s_maxPointsPerFrame = 1024;
 
 s_debugOutput = true;
-s_scanWholeShape = true;
-s_numTrajectories = 1;
